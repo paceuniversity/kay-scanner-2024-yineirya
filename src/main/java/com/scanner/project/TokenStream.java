@@ -60,7 +60,7 @@ public class TokenStream {
 				while (!isEndOfLine(nextChar) && !isEof) {
 					nextChar = readChar();
 				}
-				skipWhiteSpace();
+				
 			} else {
 				// A slash followed by anything else must be an operator.
 				t.setValue("/");
@@ -268,5 +268,6 @@ public class TokenStream {
 		return isEof;
 	}
 }
+
 
 
